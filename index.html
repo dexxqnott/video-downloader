@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Downloader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📥 Video Downloader</h1>
+        <p>Masukkan URL video YouTube/Instagram</p>
+        
+        <div class="input-group">
+            <input type="url" id="videoUrl" placeholder="https://www.youtube.com/watch?v=...">
+            <button onclick="downloadVideo()">Unduh</button>
+        </div>
+        
+        <div id="result" class="hidden">
+            <h3>Hasil Unduhan</h3>
+            <div id="videoInfo"></div>
+            <div id="downloadLinks"></div>
+        </div>
+        
+        <div id="loader" class="hidden">
+            <div class="spinner"></div>
+            <p>Sedang memproses...</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
